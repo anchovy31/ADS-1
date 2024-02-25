@@ -44,4 +44,5 @@ uint64_t sumPrime(uint64_t hbound) {
       sum += i;
     i++;
   }
+  return sum;
 }
