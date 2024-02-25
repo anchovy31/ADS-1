@@ -7,7 +7,7 @@
 
 bool checkPrime(uint64_t value) {
 // вставьте код функции
-  for (uint64_t i = 1; i < round(sqrt(value)) + 1; i++) {
+  for (uint64_t i = 2; i < round(sqrt(value)) + 1; i++) {
     if (value % i == 0)
       return false;
   }
