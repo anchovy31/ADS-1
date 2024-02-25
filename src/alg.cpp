@@ -1,12 +1,13 @@
 // Copyright 2022 NNTU-CS
 #include <cstdint>
-#include "alg.h"
 #include <cmath>
+#include "alg.h"
+
 
 
 bool checkPrime(uint64_t value) {
 // вставьте код функции
-  for (uint64_t i = 1; round(sqrt(value)) + 1;i++) {
+  for (uint64_t i = 1; round(sqrt(value)) + 1; i++) {
     if (value % i == 0)
       return false;
   }
@@ -20,7 +21,7 @@ uint64_t nPrime(uint64_t n) {
     if (checkPrime(i))
       k++;
     if (k == n)
-	    return i;
+      return i;
     i++;
   }
 }
